@@ -34,9 +34,13 @@ class ClCamera extends Component {
   }
 
   render() {
-
     const imageDisplay = this.state.capturedImage ? (
-      <img src={this.state.capturedImage} alt="captured" width="200" height="200" />
+      <img
+        src={this.state.capturedImage}
+        alt="captured"
+        width="200"
+        height="200"
+      />
     ) : (
       <span />
     );
@@ -67,7 +71,6 @@ class ClCamera extends Component {
       <span />
     );
 
-
     return (
       <div>
         {uploading}
@@ -81,7 +84,11 @@ class ClCamera extends Component {
           className="streamvideo"
         />
         <br />
-        <div className="imageCanvas">{imageDisplay}</div>
+        {this.state.captured ? (
+          <div className="imageCanvas">{imageDisplay}</div>
+        ) : (
+          <br />
+        )}
         {buttons}
       </div>
     );
@@ -133,7 +140,7 @@ class ClCamera extends Component {
           this.setState({ uploading: false });
           if (data.status === 200) {
             console.log(data);
-            alert("Image Uploaded to Cloudinary Media Library");
+            alert("Image Uploaded !");
             this.discardImage();
           } else {
             alert("Sorry, we encountered an error uploading your image");
@@ -163,7 +170,7 @@ class ClCamera extends Component {
   checkUploadStatus = data => {
     this.setState({ uploading: false });
     if (data.status === 200) {
-      alert("Image Uploaded to Cloudinary Media Library");
+      alert("Image Uploaded !");
       this.discardImage();
     } else {
       alert("Sorry, we encountered an error uploading your image");
@@ -190,9 +197,7 @@ class ClCamera extends Component {
       }
       this.setState({ uploading: false });
       if (!error) {
-        alert(
-          "All saved images have been uploaded to Cloudinary Media Library"
-        );
+        alert("All saved images have been uploaded !");
       }
     }
   };

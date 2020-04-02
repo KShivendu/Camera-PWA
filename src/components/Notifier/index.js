@@ -10,10 +10,10 @@ class Notifier extends Component {
     const message = this.props.offline
       ? `
             You are offline! Your images will be saved now and then uploaded to
-            Cloudinary Media Library once your internet connection is back up.
+            once your internet connection is back up.
         `
       : `
-            Take a picture and it will be uploaded to my account.
+            Take a picture.
         `;
     return (
       <div className={notifyclass}>
