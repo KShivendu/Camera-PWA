@@ -29,15 +29,15 @@
 }
 
 .streamvideo{
-  width: auto !important;
+  width: auto;
   /* max-width: 100% ; */
-  height: 75vh !important;
+  height: 75vh;
   /* max-height: 75vh !important; */
 }
 
 
 
-@media(max-width : 720px){
+@media(max-width : 765px){
   .streamvideo{
     height: auto;
     max-width: 100% !important;
