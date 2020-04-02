@@ -30,6 +30,16 @@
 
 .streamvideo{
   width: auto !important;
-  height: 75vh;
+  /* max-width: 100% ; */
+  height: 75vh !important;
   /* max-height: 75vh !important; */
+}
+
+
+
+@media(max-width : 720px){
+  .streamvideo{
+    height: auto;
+    max-width: 100% !important;
+  }
 }
