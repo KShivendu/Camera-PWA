@@ -122,9 +122,9 @@ class ClCamera extends Component {
     } else {
       this.setState({ uploading: true });
       axios
-        .post(`https://api.cloudinary.com/v1_1/cloudycam/image/upload`, {
+        .post(`https://api.cloudinary.com/v1_1/dm6f2ozxi/image/upload`, {
           file: this.state.capturedImage,
-          upload_preset: "pwa_cloudinary"
+          upload_preset: "n2ldfmvv"
         })
         .then(data => {
           this.setState({ uploading: false });
@@ -176,9 +176,9 @@ class ClCamera extends Component {
       for (let i = 0; i < images.length; i++) {
         // upload
         axios
-          .post(`https://api.cloudinary.com/v1_1/cloudycam/image/upload`, {
+          .post(`https://api.cloudinary.com/v1_1/dm6f2ozxi/image/upload`, {
             file: images[i].val,
-            upload_preset: "pwa_cloudinary"
+            upload_preset: "n2ldfmvv"
           })
           .then(data => this.checkUploadStatus(data))
           .catch(error => {
