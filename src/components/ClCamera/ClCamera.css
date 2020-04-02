@@ -27,3 +27,9 @@
   display: flex;
   justify-content: center;
 }
+
+.streamvideo{
+  width: 100% !important;
+  height: auto;
+  /* max-height: 75vh !important; */
+}

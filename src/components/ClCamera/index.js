@@ -67,6 +67,7 @@ class ClCamera extends Component {
       <span />
     );
 
+
     return (
       <div>
         {uploading}
@@ -75,8 +76,9 @@ class ClCamera extends Component {
           playsInline
           muted
           id="webcam"
-          width="100%"
-          height="200"
+          width="100"
+          height="100"
+          className="streamvideo"
         />
         <br />
         <div className="imageCanvas">{imageDisplay}</div>
