@@ -29,7 +29,7 @@
 }
 
 .streamvideo{
-  width: 100% !important;
-  height: auto;
+  width: auto !important;
+  height: 75vh;
   /* max-height: 75vh !important; */
 }
