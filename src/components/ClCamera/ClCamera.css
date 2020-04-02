@@ -1,19 +1,21 @@
 .captureButton {
-  margin-top: 20px;
+  margin: 20px;
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #0066b2;
+  background-color: #007bff;
+  border-color: #007bff;
   color: white;
   border-radius: 5px;
 }
 
 .deleteButton {
-  margin-top: 20px;
+  margin: 20px;
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #d77623;
+  background-color: #dc3545;
+  border-color: #dc3545;
   color: white;
   border-radius: 5px;
 }
