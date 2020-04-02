@@ -1,11 +1,11 @@
 .notify {
   background-color: #007bff;
-  padding: 20px;
+  padding: 1px;
   text-align: center;
   color: white;
   margin-bottom: 20px;
 }
 
 .danger {
-  background-color: #d77623;
+  background-color: #dc3545;
 }

@@ -34,8 +34,9 @@ class ClCamera extends Component {
   }
 
   render() {
+
     const imageDisplay = this.state.capturedImage ? (
-      <img src={this.state.capturedImage} alt="captured" width="350" />
+      <img src={this.state.capturedImage} alt="captured" width="200" height="200" />
     ) : (
       <span />
     );
@@ -114,7 +115,7 @@ class ClCamera extends Component {
         .substr(2, 5);
       localStorage.setItem(`${prefix}${rs}`, this.state.capturedImage);
       alert(
-        "Image saved locally, it will be uploaded to your Cloudinary media library once internet connection is detected"
+        "Image saved locally, it will be uploaded to my account once internet connection is detected"
       );
       this.discardImage();
 
@@ -188,7 +189,7 @@ class ClCamera extends Component {
       this.setState({ uploading: false });
       if (!error) {
         alert(
-          "All saved images have been uploaded to your Cloudinary Media Library"
+          "All saved images have been uploaded to Cloudinary Media Library"
         );
       }
     }
